@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\csharb\bin\Debug\net8.0\csharb.exe
+C:\Users\Admin\Desktop\csharb\bin\Debug\net8.0\csharb.deps.json
+C:\Users\Admin\Desktop\csharb\bin\Debug\net8.0\csharb.runtimeconfig.json
+C:\Users\Admin\Desktop\csharb\bin\Debug\net8.0\csharb.dll
+C:\Users\Admin\Desktop\csharb\bin\Debug\net8.0\csharb.pdb
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.AssemblyInfo.cs
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.dll
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\refint\csharb.dll
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.pdb
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\ref\csharb.dll
