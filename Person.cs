@@ -4,6 +4,7 @@ public class Person
 {
   public Person(String name, int age, bool gender)
   {
+    Console.WriteLine("we are in Person constructor ");
     this.name = name;
     this.age = age;
     this.gender = gender;
@@ -14,7 +15,7 @@ public class Person
     this.name = "not added yet";
     this.gender = true;
   }
-  protected String name;
+  public String name { get; set; }
   protected int age;
   protected bool gender; // true means male and false means female hhhhhhhh 
 

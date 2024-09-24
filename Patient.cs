@@ -6,11 +6,11 @@ using System.Security.Cryptography;
 public class Patiant : Person
 {
 
-  public Patiant(string name, int age, bool gender, string patiantId) : base(name, age, gender) // pass the parameter to constrector in base class
+  public Patiant(string name, int age, bool gender, string patiantId) //: base(name, age, gender) // pass the parameter to constrector in base class
   {
     this.patiantId = patiantId;
   }
-  string patiantId;
+  public string patiantId { get; set; }
   public List<Disease> midicalHistory { get; } = new List<Disease>();
   public List<Apointment> apointment { get; } = new List<Apointment>();
   private void dispalyMidicalHistory()

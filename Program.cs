@@ -3,6 +3,35 @@ using System.Runtime.Serialization.Formatters;
 
 internal class Program
 {
+    public void addapointement(string DoctorName, string PatiantName, string Date, List<Patiant> p1, List<Doctor> d1)
+    {
+        Doctor doc = null;
+        Patiant pat = null;
+        foreach (var k in p1)
+        {
+            if (PatiantName == k.name)
+            {
+                pat = k;
+                break;
+            }
+        }
+
+        foreach (var k in d1)
+        {
+            if (DoctorName == k.name)
+            {
+                doc = k;
+            }
+        }
+        if (doc == null || pat == null)
+        {
+            Console.WriteLine("somthing is missing maybe wrong name ! ");
+            return;
+        }
+        Apointment ap = new Apointment(doc.DoctorId, pat.patiantId, Date);
+        doc.apointments.Add(ap);
+        pat.apointment.Add(ap);
+    }
     private static void Main(string[] args)
     {
         List<Patiant> p1 = new List<Patiant>();
@@ -23,7 +52,7 @@ internal class Program
         Midicen m1 = new Midicen("acamole", "sleep");
         Midicen m2 = new Midicen("unacamole", "wokup");
         Midicen m3 = new Midicen("felmora", "feel disapointed");
-        Midicen m4 = new Midicen("poison ", "die");
+        Midicen m4 = new Midicen("nopain ", "nogain");
 
         // create diseases and add midicen to every disease
 
@@ -47,10 +76,10 @@ internal class Program
         p1[1].midicalHistory.Add(ds3);
         p1[2].midicalHistory.Add(ds3);
 
-        foreach (var mh in p1)
-        {
-            mh.GetInfo();
-        }
+        // foreach (var mh in p1)
+        //  {
+        //      mh.GetInfo();
+        //  }
 
     }
 }

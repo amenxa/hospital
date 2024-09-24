@@ -12,3 +12,4 @@ C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\refint\csharb.dll
 C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.pdb
 C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.genruntimeconfig.cache
 C:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\ref\csharb.dll
+c:\Users\Admin\Desktop\csharb\obj\Debug\net8.0\csharb.sourcelink.json
