@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 public class Patiant : Person
 {
 
-  public Patiant(string name, int age, bool gender, string patiantId) //: base(name, age, gender) // pass the parameter to constrector in base class
+  public Patiant(string name, int age, bool gender, string patiantId) : base(name, age, gender) // pass the parameter to constrector in base class
   {
     this.patiantId = patiantId;
   }

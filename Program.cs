@@ -26,14 +26,61 @@ internal class Program
         if (doc == null || pat == null)
         {
             Console.WriteLine("somthing is missing maybe wrong name ! ");
-            return;
         }
         Apointment ap = new Apointment(doc.DoctorId, pat.patiantId, Date);
         doc.apointments.Add(ap);
         pat.apointment.Add(ap);
     }
+
+    // Try itrator method : create an itrator method
+    static IEnumerable<int> getEvenNumbers(int[] a)
+    {
+        foreach (int x in a)
+        {
+            if (x % 2 == 0) yield return x;
+        }
+    }
+
     private static void Main(string[] args)
     {
+        // use itrator method 
+        int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        foreach (int x in getEvenNumbers(a))
+        {
+            Console.WriteLine(x);
+        }
+
+        // Try Lambda 
+        var sumOf2numbers = (int a, int b) => a + b;
+        Console.WriteLine(sumOf2numbers(1, 2));
+
+        // or  ,, here we used the lambda as a function that do some operation and return a value 
+        var andplsor = (int a, int b) =>
+        {
+            int x = a & b;
+            int y = a | b;
+            return x + y;
+        };
+        Console.WriteLine(andplsor(1, 2));
+
+        // Try Anonymous Types :
+        // to declare any thing anonymosly like an tembrory object  
+        var anything = new
+        {
+            name = "ameen",
+            moreanonymous = new { speed = 55, anotherone = "code" }
+
+        };
+        Console.WriteLine(anything.moreanonymous.speed);
+
+        // try indexer : 
+        // make an Object be useed as an array and access to things by indexes choosen by you see in aopintment class 
+        Apointment ap1 = new Apointment("", "", "");
+        ap1[0] = "kk";
+        ap1[1] = "dd";
+        ap1[2] = "23";
+
+        // start of the project 
         List<Patiant> p1 = new List<Patiant>();
         List<Doctor> d1 = new List<Doctor>();
         // add new patiant 
@@ -76,10 +123,10 @@ internal class Program
         p1[1].midicalHistory.Add(ds3);
         p1[2].midicalHistory.Add(ds3);
 
-        // foreach (var mh in p1)
-        //  {
-        //      mh.GetInfo();
-        //  }
+        foreach (var mh in p1)
+        {
+            mh.GetInfo();
+        }
 
     }
 }
